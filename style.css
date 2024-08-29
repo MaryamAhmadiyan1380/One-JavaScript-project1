@@ -14,6 +14,7 @@ body{
     align-items: center;
     min-height: 100vh;
     background: #2f263e;
+    
 }
 .box{
     position: relative;
@@ -50,6 +51,18 @@ h2{
     inset 2px 2px 5px rgb(0, 0, 0,0.5),
     inset -5px -5px 15px rgb(0, 0, 0,0.5);
 
+}
+#Div{
+    display: flex;
+}
+ #btn{
+     width: 95px;
+     height: 40px;
+     font-size: 17px;
+    margin-right: 5px;
+    background-color: black;
+    color: rgb(100, 7, 7);
+    
 }
 .box li{
     position: relative;
@@ -140,4 +153,7 @@ h2{
 
 ::webkit-schrollbar-thumb{
     background: #fff;
+}
+#btn{
+
 }

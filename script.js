@@ -1,5 +1,6 @@
 let input = document.querySelector("#inputBx");
 let list = document.querySelector("#list");
+let btnAddTask=document.getElementById("btn")
 
 input.addEventListener('keyup', function (e) {
     if (e.key == 'Enter') {
@@ -19,6 +20,13 @@ let addItem = (input) => {
     listItem.querySelector('i').addEventListener('click', function () {
         listItem.remove();
     });
+    
     list.appendChild(listItem);
 
 }
+btnAddTask.addEventListener('click',function (e) {
+   
+        addItem(input.value);
+        input.value = '';
+});
+
