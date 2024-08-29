@@ -1,7 +1,7 @@
 let input = document.querySelector("#inputBx");
 let list = document.querySelector("#list");
 let btnAddTask=document.getElementById("btn")
-
+let btnDleteTask=document.getElementById("btnDelete");
 input.addEventListener('keyup', function (e) {
     if (e.key == 'Enter') {
         addItem(this.value);
@@ -29,4 +29,12 @@ btnAddTask.addEventListener('click',function (e) {
         addItem(input.value);
         input.value = '';
 });
+btnDleteTask.addEventListener('click',deleteItem);
+
+function deleteItem(){
+   list.remove()
+   window.alert("your Tasks deleted width successfully...! Thre is no Tasks")
+   
+}
+
 
